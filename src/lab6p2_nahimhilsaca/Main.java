@@ -6,6 +6,7 @@ package lab6p2_nahimhilsaca;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -33,6 +34,23 @@ public class Main extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        identificacion_estacion = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        fabricante_estacion = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        anios_estacion = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        modelo_estacion = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        controles_estacion = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        almacenamiento_estacion = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        conexion_estacion = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        precio_estacion = new javax.swing.JTextField();
+        agregar_estacion = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaconsola = new javax.swing.JTable();
@@ -81,15 +99,118 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 0));
+
+        jLabel4.setText("Identificacion");
+
+        identificacion_estacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                identificacion_estacionActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Fabricante");
+
+        jLabel11.setText("Anios de Uso");
+
+        jLabel12.setText("Modelo");
+
+        jLabel13.setText("Numero de Controles");
+
+        controles_estacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                controles_estacionActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("Almacenamiento");
+
+        jLabel15.setText("Conexion");
+
+        jLabel16.setText("Precio");
+
+        agregar_estacion.setText("Agregar Consola Estacionaria");
+        agregar_estacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregar_estacionMouseClicked(evt);
+            }
+        });
+        agregar_estacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agregar_estacionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1070, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(identificacion_estacion)
+                    .addComponent(fabricante_estacion)
+                    .addComponent(anios_estacion)
+                    .addComponent(modelo_estacion)
+                    .addComponent(controles_estacion)
+                    .addComponent(almacenamiento_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE)
+                    .addComponent(conexion_estacion)
+                    .addComponent(precio_estacion))
+                .addGap(158, 158, 158))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(438, 438, 438)
+                .addComponent(agregar_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(436, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 649, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(identificacion_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fabricante_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(anios_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(modelo_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(controles_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(almacenamiento_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(conexion_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(precio_estacion, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(agregar_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Consola Estacionaria", jPanel3);
@@ -132,7 +253,6 @@ public class Main extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(153, 153, 0));
         jLabel2.setText("Identificacion");
 
-        identificacion_portatil.setText("jTextField1");
         identificacion_portatil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 identificacion_portatilActionPerformed(evt);
@@ -141,14 +261,11 @@ public class Main extends javax.swing.JFrame {
 
         jLabel3.setText("Fabricante");
 
-        fabricante_portatil.setText("jTextField1");
         fabricante_portatil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fabricante_portatilActionPerformed(evt);
             }
         });
-
-        anios_portatil.setText("jTextField2");
 
         jLabel5.setText("Precio");
 
@@ -160,18 +277,11 @@ public class Main extends javax.swing.JFrame {
 
         jLabel10.setText("Bateria");
 
-        precio_portatil.setText("jTextField1");
-
-        modelo_portatil.setText("jTextField2");
-
-        tamanio_portatil.setText("jTextField3");
         tamanio_portatil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tamanio_portatilActionPerformed(evt);
             }
         });
-
-        bateria_portatil.setText("jTextField4");
 
         Agregar_portatil.setText("Agregar Consola Portatil");
         Agregar_portatil.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -264,7 +374,7 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Consola Portatil", jPanel2);
 
-        jPanel1.add(jTabbedPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 1070, 680));
+        jPanel1.add(jTabbedPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 1070, 680));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/videojuego.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -311,7 +421,63 @@ public class Main extends javax.swing.JFrame {
 
     private void jTabbedPane3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane3MouseClicked
 
+        int cont=0;
+        
+        DefaultTableModel modelo = (DefaultTableModel)tablaconsola.getModel();
+        
+        for (Consola c : consola) {
+           
+            if (c instanceof Portatil) {
+                 modelo.setValueAt(identificacion_portatil.getText(), cont, 0);
+            modelo.setValueAt(fabricante_portatil.getText(), cont, 1);
+            modelo.setValueAt(Integer.parseInt( anios_portatil.getText()), cont, 2);
+            modelo.setValueAt(Integer.parseInt(precio_portatil.getText()), cont, 3);
+            modelo.setValueAt(modelo_portatil.getText(), cont, 4);
+            modelo.setValueAt(tamanio_portatil.getText(), cont, 5);
+            modelo.setValueAt(bateria_portatil.getText(), cont, 6);
+            modelo.setValueAt(estuche_rb.isSelected(), cont, 7);
+           tablaconsola.setModel(modelo);
+               
+            }else if(c instanceof Estacionaria){
+                
+                modelo.setValueAt(identificacion_estacion.getText(), cont, 0);
+                modelo.setValueAt(fabricante_estacion.getText(), cont, 1);
+                modelo.setValueAt(Integer.parseInt( anios_estacion.getText()), cont, 2);
+                modelo.setValueAt(Integer.parseInt( precio_estacion.getText()), cont, 3);
+                modelo.setValueAt(modelo_estacion.getText(), cont, 4);
+                modelo.setValueAt(Integer.parseInt( controles_estacion.getText()), cont, 8);
+                modelo.setValueAt(Double.parseDouble(almacenamiento_estacion.getText()), cont, 9);
+                modelo.setValueAt(conexion_estacion.getText(), cont, 10);
+                tablaconsola.setModel(modelo);
+
+                   
+        
+        
+        }else{
+            JOptionPane.showMessageDialog(this, "No hay consolas seleccionadas");
+            
+            }
+            
+            cont++;
+            
+        }
     }//GEN-LAST:event_jTabbedPane3MouseClicked
+
+    private void identificacion_estacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_identificacion_estacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_identificacion_estacionActionPerformed
+
+    private void controles_estacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controles_estacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_controles_estacionActionPerformed
+
+    private void agregar_estacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregar_estacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregar_estacionActionPerformed
+
+    private void agregar_estacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_estacionMouseClicked
+        consola.add(new Estacionaria(Integer.parseInt(controles_estacion.getText()), Double.parseDouble(almacenamiento_estacion.getText()), conexion_estacion.getText(), identificacion_estacion.getText(), fabricante_estacion.getText(), Integer.parseInt(anios_estacion.getText()), Integer.parseInt(precio_estacion.getText()), modelo_estacion.getText()));
+    }//GEN-LAST:event_agregar_estacionMouseClicked
 
     /**
      * @param args the command line arguments
@@ -351,19 +517,34 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Agregar_portatil;
+    private javax.swing.JButton agregar_estacion;
+    private javax.swing.JTextField almacenamiento_estacion;
+    private javax.swing.JTextField anios_estacion;
     private javax.swing.JTextField anios_portatil;
     private javax.swing.JTextField bateria_portatil;
+    private javax.swing.JTextField conexion_estacion;
+    private javax.swing.JTextField controles_estacion;
     private javax.swing.JRadioButton estuche_rb;
+    private javax.swing.JTextField fabricante_estacion;
     private javax.swing.JTextField fabricante_portatil;
+    private javax.swing.JTextField identificacion_estacion;
     private javax.swing.JTextField identificacion_portatil;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -371,7 +552,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTextField modelo_estacion;
     private javax.swing.JTextField modelo_portatil;
+    private javax.swing.JTextField precio_estacion;
     private javax.swing.JTextField precio_portatil;
     private javax.swing.JTable tablaconsola;
     private javax.swing.JTextField tamanio_portatil;
