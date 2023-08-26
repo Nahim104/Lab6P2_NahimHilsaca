@@ -1193,6 +1193,10 @@ public class Main extends javax.swing.JFrame {
 
     private void agregarjuegoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarjuegoMouseClicked
       DefaultListModel modelo= (DefaultListModel)listajuego.getModel();
+      
+      Juego j= new Juego(nombre_juego.getText(), descripcion_juego.getText(), fecha_juego.getDate(), Double.parseDouble(precio_juego.getText()), estado_juego.getText(), rentable_juego.isSelected(), agregado_juego.getText(), Integer.parseInt(cantidad_juego.getText()));
+      modelo.addElement(j);
+      listajuego.setModel(modelo);
     }//GEN-LAST:event_agregarjuegoMouseClicked
 
     /**
