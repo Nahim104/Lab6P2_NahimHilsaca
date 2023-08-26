@@ -74,6 +74,10 @@ public class Main extends javax.swing.JFrame {
         CRUDconsola = new javax.swing.JPopupMenu();
         modConsola = new javax.swing.JMenuItem();
         EliminarConsola = new javax.swing.JMenuItem();
+        verJuegos = new javax.swing.JMenuItem();
+        Juegos = new javax.swing.JDialog();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
@@ -460,6 +464,52 @@ public class Main extends javax.swing.JFrame {
             }
         });
         CRUDconsola.add(EliminarConsola);
+
+        verJuegos.setText("jMenuItem1");
+        CRUDconsola.add(verJuegos);
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 831, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 770, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout JuegosLayout = new javax.swing.GroupLayout(Juegos.getContentPane());
+        Juegos.getContentPane().setLayout(JuegosLayout);
+        JuegosLayout.setHorizontalGroup(
+            JuegosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JuegosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(JuegosLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        JuegosLayout.setVerticalGroup(
+            JuegosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JuegosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(JuegosLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -968,6 +1018,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton Agregar_portatil;
     private javax.swing.JPopupMenu CRUDconsola;
     private javax.swing.JMenuItem EliminarConsola;
+    private javax.swing.JDialog Juegos;
     private javax.swing.JButton agregar_estacion;
     private javax.swing.JButton agregar_nvo;
     private javax.swing.JButton agregarestacion_nvo;
@@ -1031,6 +1082,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JMenuItem modConsola;
@@ -1050,6 +1103,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tamanio_nvo;
     private javax.swing.JTextField tamanio_nvo2;
     private javax.swing.JTextField tamanio_portatil;
+    private javax.swing.JMenuItem verJuegos;
     // End of variables declaration//GEN-END:variables
 ArrayList <Consola> consola= new ArrayList();
 
