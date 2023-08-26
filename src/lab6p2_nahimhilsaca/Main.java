@@ -491,6 +491,11 @@ public class Main extends javax.swing.JFrame {
         CRUDconsola.add(EliminarConsola);
 
         verJuegos.setText("jMenuItem1");
+        verJuegos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verJuegosActionPerformed(evt);
+            }
+        });
         CRUDconsola.add(verJuegos);
 
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1111,17 +1116,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_agregar_estacionMouseClicked
 
     private void modConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modConsolaActionPerformed
-        if (tablaconsola.getSelectedRow()>=0) {
-
-            if (consola.get(tablaconsola.getSelectedRow()) instanceof Portatil) {
-                
-                
-                
-            }
-            
-            
-            
-        }
+        
     }//GEN-LAST:event_modConsolaActionPerformed
 
     private void identificacion_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_identificacion_nvoActionPerformed
@@ -1198,6 +1193,13 @@ public class Main extends javax.swing.JFrame {
       modelo.addElement(j);
       listajuego.setModel(modelo);
     }//GEN-LAST:event_agregarjuegoMouseClicked
+
+    private void verJuegosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verJuegosActionPerformed
+       Juegos.pack();
+        Juegos.setModal(true);
+        Juegos.setLocationRelativeTo(null);
+        Juegos.setVisible(true);
+    }//GEN-LAST:event_verJuegosActionPerformed
 
     /**
      * @param args the command line arguments
