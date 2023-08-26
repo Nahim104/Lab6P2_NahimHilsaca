@@ -31,6 +31,49 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jDialog1 = new javax.swing.JDialog();
+        modportatil = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        identificacion_nvo = new javax.swing.JTextField();
+        fabricante_nvo = new javax.swing.JTextField();
+        anios_nvo = new javax.swing.JTextField();
+        precio_nvo = new javax.swing.JTextField();
+        modelo_nvo = new javax.swing.JTextField();
+        tamanio_nvo = new javax.swing.JTextField();
+        bateria_nvo = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        estuche_nvo = new javax.swing.JRadioButton();
+        agregar_nvo = new javax.swing.JButton();
+        modestacion = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        fabricante_n = new javax.swing.JTextField();
+        identificacion_n = new javax.swing.JTextField();
+        anios_n = new javax.swing.JTextField();
+        precio_n = new javax.swing.JTextField();
+        controles_n = new javax.swing.JTextField();
+        almacenamiento_n = new javax.swing.JTextField();
+        conexion_n = new javax.swing.JTextField();
+        modelo_n = new javax.swing.JTextField();
+        agregarestacion_nvo = new javax.swing.JButton();
+        precio_nvo2 = new javax.swing.JTextField();
+        modelo_nvo2 = new javax.swing.JTextField();
+        tamanio_nvo2 = new javax.swing.JTextField();
+        CRUDconsola = new javax.swing.JPopupMenu();
+        modConsola = new javax.swing.JMenuItem();
+        EliminarConsola = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
@@ -73,16 +116,350 @@ public class Main extends javax.swing.JFrame {
         estuche_rb = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
 
+        modportatil.setBackground(new java.awt.Color(255, 204, 51));
+
+        jLabel17.setText("Fabricante");
+
+        jLabel18.setText("Precio");
+
+        jLabel19.setBackground(new java.awt.Color(153, 153, 0));
+        jLabel19.setText("Identificacion");
+
+        jLabel20.setText("Anios de Uso");
+
+        jLabel21.setText("Tamaño");
+
+        jLabel22.setText("Bateria");
+
+        jLabel23.setText("Modelo");
+
+        identificacion_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                identificacion_nvoActionPerformed(evt);
+            }
+        });
+
+        fabricante_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fabricante_nvoActionPerformed(evt);
+            }
+        });
+
+        precio_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                precio_nvoActionPerformed(evt);
+            }
+        });
+
+        tamanio_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tamanio_nvoActionPerformed(evt);
+            }
+        });
+
+        jLabel24.setText("Estuche");
+
+        estuche_nvo.setText("Estuche");
+        estuche_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estuche_nvoActionPerformed(evt);
+            }
+        });
+
+        agregar_nvo.setText("Agregar Portatil");
+        agregar_nvo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agregar_nvoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modportatilLayout = new javax.swing.GroupLayout(modportatil);
+        modportatil.setLayout(modportatilLayout);
+        modportatilLayout.setHorizontalGroup(
+            modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modportatilLayout.createSequentialGroup()
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(modportatilLayout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(420, 420, 420)
+                        .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fabricante_nvo)
+                            .addComponent(identificacion_nvo)
+                            .addGroup(modportatilLayout.createSequentialGroup()
+                                .addComponent(anios_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(modportatilLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(modelo_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(precio_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(133, 133, 133))
+            .addGroup(modportatilLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(bateria_nvo, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tamanio_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(estuche_nvo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE))
+                .addGap(154, 154, 154))
+            .addGroup(modportatilLayout.createSequentialGroup()
+                .addGap(469, 469, 469)
+                .addComponent(agregar_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modportatilLayout.createSequentialGroup()
+                    .addGap(53, 53, 53)
+                    .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addContainerGap(820, Short.MAX_VALUE)))
+        );
+        modportatilLayout.setVerticalGroup(
+            modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modportatilLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(identificacion_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(fabricante_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(anios_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
+                .addComponent(precio_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(modelo_nvo, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(tamanio_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bateria_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estuche_nvo, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
+                .addGap(1, 1, 1)
+                .addComponent(agregar_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(modportatilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modportatilLayout.createSequentialGroup()
+                    .addGap(108, 108, 108)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(46, 46, 46)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+                    .addGap(95, 95, 95)))
+        );
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 51));
+
+        jLabel25.setText("Identificacion");
+
+        jLabel26.setText("Fabricante");
+
+        jLabel27.setText("Anios de Uso");
+
+        jLabel28.setText("Precio");
+
+        jLabel29.setText("Modelo");
+
+        jLabel30.setText("Numero de Controles");
+
+        jLabel31.setText("Alamacenamiento");
+
+        jLabel32.setText("Conexion");
+
+        identificacion_n.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                identificacion_nActionPerformed(evt);
+            }
+        });
+
+        modelo_n.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modelo_nActionPerformed(evt);
+            }
+        });
+
+        agregarestacion_nvo.setText("Agregar Estacion");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(identificacion_n)
+                    .addComponent(fabricante_n)
+                    .addComponent(anios_n)
+                    .addComponent(precio_n)
+                    .addComponent(modelo_n)
+                    .addComponent(controles_n)
+                    .addComponent(almacenamiento_n)
+                    .addComponent(conexion_n, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(153, 153, 153))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(385, 385, 385)
+                .addComponent(agregarestacion_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(423, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(identificacion_n)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(fabricante_n)
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(anios_n, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(precio_n, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(modelo_n, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(controles_n, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(almacenamiento_n, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(conexion_n, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(32, 32, 32)
+                .addComponent(agregarestacion_nvo, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
+        );
+
+        javax.swing.GroupLayout modestacionLayout = new javax.swing.GroupLayout(modestacion);
+        modestacion.setLayout(modestacionLayout);
+        modestacionLayout.setHorizontalGroup(
+            modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modestacionLayout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(precio_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(modelo_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(tamanio_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        modestacionLayout.setVerticalGroup(
+            modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modestacionLayout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(precio_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(modelo_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(modestacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modestacionLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(tamanio_nvo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
         jDialog1Layout.setHorizontalGroup(
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addComponent(modportatil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDialog1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(modestacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jDialog1Layout.setVerticalGroup(
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+                .addComponent(modportatil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDialog1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(modestacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        modConsola.setText("jMenuItem1");
+        modConsola.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modConsolaActionPerformed(evt);
+            }
+        });
+        CRUDconsola.add(modConsola);
+
+        EliminarConsola.setText("jMenuItem1");
+        EliminarConsola.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EliminarConsolaActionPerformed(evt);
+            }
+        });
+        CRUDconsola.add(EliminarConsola);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -226,6 +603,11 @@ public class Main extends javax.swing.JFrame {
                 "Identificacion", "Fabricante", "Anios de Uso", "Precio", "Modelo", "Tamanio", "Bateria", "Estuche", " Controles", "Disco Duro", "Conexion"
             }
         ));
+        tablaconsola.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaconsolaMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tablaconsola);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -420,8 +802,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane3StateChanged
 
     private void jTabbedPane3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane3MouseClicked
-
-        int cont=0;
+            
+                int cont=0;
         
         DefaultTableModel modelo = (DefaultTableModel)tablaconsola.getModel();
         
@@ -460,7 +842,9 @@ public class Main extends javax.swing.JFrame {
             
             cont++;
             
+       
         }
+        
     }//GEN-LAST:event_jTabbedPane3MouseClicked
 
     private void identificacion_estacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_identificacion_estacionActionPerformed
@@ -478,6 +862,71 @@ public class Main extends javax.swing.JFrame {
     private void agregar_estacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_estacionMouseClicked
         consola.add(new Estacionaria(Integer.parseInt(controles_estacion.getText()), Double.parseDouble(almacenamiento_estacion.getText()), conexion_estacion.getText(), identificacion_estacion.getText(), fabricante_estacion.getText(), Integer.parseInt(anios_estacion.getText()), Integer.parseInt(precio_estacion.getText()), modelo_estacion.getText()));
     }//GEN-LAST:event_agregar_estacionMouseClicked
+
+    private void modConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modConsolaActionPerformed
+        if (tablaconsola.getSelectedRow()>=0) {
+
+            if (consola.get(tablaconsola.getSelectedRow()) instanceof Portatil) {
+                
+                
+                
+            }
+            
+            
+            
+        }
+    }//GEN-LAST:event_modConsolaActionPerformed
+
+    private void identificacion_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_identificacion_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_identificacion_nvoActionPerformed
+
+    private void fabricante_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fabricante_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fabricante_nvoActionPerformed
+
+    private void tamanio_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tamanio_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tamanio_nvoActionPerformed
+
+    private void tablaconsolaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaconsolaMouseClicked
+        if (evt.isMetaDown()) {
+            CRUDconsola.show(evt.getComponent(), evt.getX(), evt.getY());
+  
+        }
+    }//GEN-LAST:event_tablaconsolaMouseClicked
+
+    private void precio_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precio_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_precio_nvoActionPerformed
+
+    private void estuche_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estuche_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_estuche_nvoActionPerformed
+
+    private void agregar_nvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregar_nvoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregar_nvoActionPerformed
+
+    private void identificacion_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_identificacion_nActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_identificacion_nActionPerformed
+
+    private void modelo_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelo_nActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_modelo_nActionPerformed
+
+    private void EliminarConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarConsolaActionPerformed
+        if (tablaconsola.getSelectedRow()>=0) {
+            
+            DefaultTableModel modelo=(DefaultTableModel) tablaconsola.getModel();
+            
+            modelo.removeRow(tablaconsola.getSelectedRow());
+            
+            tablaconsola.setModel(modelo);
+            
+        }
+    }//GEN-LAST:event_EliminarConsolaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -517,17 +966,32 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Agregar_portatil;
+    private javax.swing.JPopupMenu CRUDconsola;
+    private javax.swing.JMenuItem EliminarConsola;
     private javax.swing.JButton agregar_estacion;
+    private javax.swing.JButton agregar_nvo;
+    private javax.swing.JButton agregarestacion_nvo;
     private javax.swing.JTextField almacenamiento_estacion;
+    private javax.swing.JTextField almacenamiento_n;
     private javax.swing.JTextField anios_estacion;
+    private javax.swing.JTextField anios_n;
+    private javax.swing.JTextField anios_nvo;
     private javax.swing.JTextField anios_portatil;
+    private javax.swing.JTextField bateria_nvo;
     private javax.swing.JTextField bateria_portatil;
     private javax.swing.JTextField conexion_estacion;
+    private javax.swing.JTextField conexion_n;
     private javax.swing.JTextField controles_estacion;
+    private javax.swing.JTextField controles_n;
+    private javax.swing.JRadioButton estuche_nvo;
     private javax.swing.JRadioButton estuche_rb;
     private javax.swing.JTextField fabricante_estacion;
+    private javax.swing.JTextField fabricante_n;
+    private javax.swing.JTextField fabricante_nvo;
     private javax.swing.JTextField fabricante_portatil;
     private javax.swing.JTextField identificacion_estacion;
+    private javax.swing.JTextField identificacion_n;
+    private javax.swing.JTextField identificacion_nvo;
     private javax.swing.JTextField identificacion_portatil;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
@@ -538,8 +1002,24 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -550,13 +1030,25 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JMenuItem modConsola;
     private javax.swing.JTextField modelo_estacion;
+    private javax.swing.JTextField modelo_n;
+    private javax.swing.JTextField modelo_nvo;
+    private javax.swing.JTextField modelo_nvo2;
     private javax.swing.JTextField modelo_portatil;
+    private javax.swing.JPanel modestacion;
+    private javax.swing.JPanel modportatil;
     private javax.swing.JTextField precio_estacion;
+    private javax.swing.JTextField precio_n;
+    private javax.swing.JTextField precio_nvo;
+    private javax.swing.JTextField precio_nvo2;
     private javax.swing.JTextField precio_portatil;
     private javax.swing.JTable tablaconsola;
+    private javax.swing.JTextField tamanio_nvo;
+    private javax.swing.JTextField tamanio_nvo2;
     private javax.swing.JTextField tamanio_portatil;
     // End of variables declaration//GEN-END:variables
 ArrayList <Consola> consola= new ArrayList();
